@@ -192,6 +192,14 @@ margin-bottom: 20px;
     padding-bottom: 70px;
 }
 
+
+footer .heading h3{
+    font-size: 30px !important;
+}
+
+footer .heading p{
+    font-size: 18px !important;
+}
   
 }
 
@@ -224,6 +232,10 @@ margin-bottom: 20px;
 width: 50%;
 }
 
+
+footer .heading h3{
+    font-size: 20px;
+}
 }
 
 @media(max-width:767px){

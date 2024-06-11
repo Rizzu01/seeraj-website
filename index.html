@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Hero Section -->
+  <section id="hero" class="mb-[110px] md:mb-[70px] sm:mb-[50px]">
+    <div class="inner-hero h-full">
+      <header class="text-white nav-bar">
+        <div class="container mx-auto flex justify-between items-center p-4">
+          <div class="text-xl font-bold">
+            <img src="./images/logo.png" alt="Logo">
+          </div>
+          <div class="lg:hidden">
+            <button class="text-white" onclick="toggleSidebar()">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+          <nav class="hidden lg:flex lg:space-x-8 nav-bar">
+            <a href="#" class="hover:text-gray-300">Home</a>
+            <a href="#" class="hover:text-gray-300">About</a>
+            <a href="#" class="hover:text-gray-300">Services</a>
+            <a href="#" class="hover:text-gray-300">Contact</a>
+          </nav>
+        </div>
+      </header>
+      <div id="sidebar" class="fixed inset-y-0 left-0 transform -translate-x-full transition-transform duration-300 ease-in-out bg-gray-800 text-white w-64 lg:hidden">
+        <div class="flex justify-end p-4">
+          <button class="text-white" onclick="toggleSidebar()">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-4 p-4">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">About</a>
+          <a href="#" class="hover:text-gray-300">Services</a>
+          <a href="#" class="hover:text-gray-300">Contact</a>
+        </nav>
+      </div>
+      <div class="hero-content container mx-auto p-4 mt-10 lg:mt-20">
+        <div class="flex flex-col lg:flex-row items-center">
+          <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
+            <p class="text-[16px] text-white mb-[40px] sub-head">GET FIERCE LEGAL SUPPORT</p>
+            <h1 class="2xl:text-[64px] xl:text-56 lg:text-48 text-white mb-[15px] font-normal p-font">
+              We Provide The Best
+              <br>
+              Possible <span class="text-[#CB935D] italic">Legal Services</h1>
+                    <p class="text-[16px] text-white mb-[25px] lg:pr-[45px] pera-1">Vitae auctor eu augue ut lectus arcu. Dictum
+                        fusce ut placerat orci nulla pellentesque dignissim enim. Enim nunc faucibus a pellentesque sit amet
+                        porttitor eget dolor.</p>
+
+                    <div class="btn-c">
+                      <a class="p-font bg-[#CB935D] text-white py-[15px] px-[45px] text-[24px]"
+                          href="#">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="w-full lg:w-1/2">
+                    <div class="img-box w-full max-w-[570px] lg:ms-auto">
+                        <img class="w-full h-[570px] rounded-[80px] object-cover" src="./images/img-hero.jpg" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+  <section id="achive">
+
+    <div class="element-1">
+      <img src="./images/element-1.png" alt="">
+    </div>
+  
+    <div class="container mx-auto pb-[110px]">
+
+      <h3 class="p-color text-[64px] p-font text-center mb-[10px]">Our Achievements</h3>
+      <div class="pera w-[35%] mx-auto px-6/6 mb-[50px]">
+        <p class="text-[16px] s-font p-color text-center">Vitae auctor eu augue ut lectus arcu. Dictum fusce ut placerat
+          orci nulla pellentesque dignissim enim. Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.</p>
+      </div>
+  
+      <div class="flex flex-wrap " id="Pcounter">
+        <div class="w-3/12 border-r c-box">
+          <h4 class="text-[80px] p-font text-center p-color"><span class="counter" data-target="100">0</span>%</h4>
+          <p class="text-[24px] s-font p-color text-center font-normal">Cases Solved</p>
+        </div>
+        <div class="w-3/12 border-r c-box">
+          <h4 class="text-[80px] p-font text-center p-color"><span class="counter" data-target="50">0</span>+</h4>
+          <p class="text-[24px] s-font p-color text-center font-normal">Happy Clients</p>
+        </div>
+        <div class="w-3/12 border-r c-box">
+          <h4 class="text-[80px] p-font text-center p-color"><span class="counter" data-target="200">0</span></h4>
+          <p class="text-[24px] s-font p-color text-center font-normal">Loreum Ipsum</p>
+        </div>
+        <div class="w-3/12 c-box">
+          <h4 class="text-[80px] p-font text-center p-color"><span class="counter" data-target="150">0</span></h4>
+          <p class="text-[24px] s-font p-color text-center font-normal">Working Hours</p>
+        </div>
+      </div>
+
+
+  </section>
+
+  <section class="p-back p-[80px]" id="about">
+    <div class="element-2">
+      <img src="./images/element-2.png" alt="">
+    </div>
+    <div class="container mx-auto">
+
+      <div class="flex items-center flex-wrap">
+
+        <div class="w-2/5 box">
+          <img src="./images/about-img.png" alt="">
+        </div>
+        <div class="w-3/5 box">
+          <p class="text-[16px] text-white mb-[20px] p-s">About Us</p>
+          <h3 class="text-[64px] text-white p-font">SEERAJ LEGAL RELIEF
+            <br>
+            <span class="s-color">FOUNDATION </span>
+          </h3>
+          <p class="text-[16px] text-white mb-[40px]">is one of the Non-Government Company  having CIN
+            No.U94120RJ2024NPL093001. We are providing access to justice and promoting good faith negotiations between
+            parties aim to settle the disagreement amicably. We resolve disputes in a cost effective manners, we
+            encourage the use of alternative dispute resolution (ADR) method such as arbitration and conciliation we
+            conduct proceeding according to the rules framed under the arbitration and conciliation act. We also offer
+            advice on drafting, contracts, organizes conference and LokAdalat and spread awareness by conducting
+            awareness programmes.</p>
+          <a class="p-font bg-[#CB935D] text-white pt-[15px] pb-[15px] ps-[45px] pe-[45px] text-[24px]" href="#">Contact
+            Us</a>
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="service" >
+
+    <div class="element-3">
+      <img src="./images/s-element-1.png" alt="">
+    </div>
+
+    <div class="element-4">
+      <img src="./images/s-element-2.png" alt="">
+    </div>
+
+    <div class="services-cr bg-[#F9F7F5] pt-[110px] pb-[110px] md:pb-[70px] sm:pb-[50px] md:pt-[70px] sm:pt-[50px]">
+    <div class="container mx-auto">
+
+        <h3 class="p-color text-[64px] p-font text-center mb-[10px]">Our Services</h3>
+        <div class="pera w-[35%] mx-auto px-6/6 mb-[50px]">
+          <p class="text-[16px] s-font p-color text-center">FASTER & AMICABLY RESOLUTION,QUICK RESPONSE </p>
+        </div>
+        <div class="owl-carousel owl-theme s-carousel">
+          <div class="item">
+        <div class="card h-full w-full">
+          <img class="image" src="./images/s-1.jpg" alt="">
+        <div class="inner-card  h-full ">
+        
+        <div class="h-btn mt-[10px]">
+          <h4 class="p-font s-color text-[36px] mb-[20px]">ARBITRATION</h4>
+          <a class="p-font bg-[#CB935D] text-white pt-[10px] pb-[10px] ps-[30px] pe-[30px] text-[24px] rounded-[1000px]" href="#">Read More</a>
+        </div>
+        
+        </div>
+        
+        </div>
+          </div>
+          <div class="item"><div class="card h-full w-full">
+          <img class="image" src="./images/s-2.jpg" alt="">
+
+            <div class="inner-card  h-full ">
+        
+            <div class="h-btn mt-[10px]">
+              <h4 class="p-font s-color text-[36px] mb-[20px]">MEDIATION</h4>
+              <a class="p-font bg-[#CB935D] text-white pt-[10px] pb-[10px] ps-[30px] pe-[30px] text-[24px] rounded-[1000px]" href="#">Read More</a>
+            </div>
+        
+            </div>
+        
+            </div></div>
+          <div class="item"><div class="card h-full w-full">
+            <img class="image" src="./images/s-3.jpg" alt="">
+            
+            <div class="inner-card  h-full ">
+        
+            <div class="h-btn mt-[10px]">
+              <h4 class="p-font s-color text-[36px] mb-[20px]">CONCILIATION</h4>
+              <a class="p-font bg-[#CB935D] text-white pt-[10px] pb-[10px] ps-[30px] pe-[30px] text-[24px] rounded-[1000px]" href="#">Read More</a>
+            </div>
+        
+            </div>
+        
+            </div></div>
+          <div class="item"><div class="card h-full w-full">
+            <img class="image" src="./images/s-4.avif" alt="">
+            <div class="inner-card  h-full ">
+        
+            <div class="h-btn mt-[10px]">
+              <h4 class="p-font s-color text-[36px] mb-[20px]">NEGOTIATION</h4>
+              <a class="p-font bg-[#CB935D] text-white pt-[10px] pb-[10px] ps-[30px] pe-[30px] text-[24px] rounded-[1000px]" href="#">Read More</a>
+            </div>
+        
+            </div>
+        
+            </div></div>
+          <div class="item"><div class="card h-full w-full">
+            <img class="image" src="./images/s-5.jpg" alt="">
+            <div class="inner-card  h-full ">
+        
+            <div class="h-btn mt-[10px]">
+              <h4 class="p-font s-color text-[36px] mb-[20px]">LOK ADALAT</h4>
+              <a class="p-font bg-[#CB935D] text-white pt-[10px] pb-[10px] ps-[30px] pe-[30px] text-[24px] rounded-[1000px]" href="#">Read More</a>
+            </div>
+        
+            </div>
+        
+            </div></div>
+            </div>
+      
+
+
+    </div>
+  </div>
+  </section>
+
+
+  <section id="testi" class=" pb-[110px] pt-[110px]">
+<div class="container mx-auto">
+
+  <div class="flex items-center flex-wrap">
+
+
+    <div class="w-1/2 box">
+      <p class="text-[16px] text-gray-400 mb-[8px]">TESTIMONIALS</p>
+      <h3 class="p-color text-[64px] p-font  mb-[30px]">What Our Clients <br>Are Saying</h3>
+      <a class="p-font bg-[#CB935D] text-white pt-[15px] pb-[15px] ps-[45px] pe-[45px] text-[24px]"
+      href="#">Contact Us</a>
+
+    </div>
+
+    <div class="w-1/2 box">
+      <div class="owl-carousel owl-theme t-carousel">
+        <div class="item p-2">
+      <p class="text-[20px]">At SEERAJ LEGAL RELIEF FOUNDATION  Advocates and Associates, we bring years of experience across various practice areas, ensuring you receive informed, effective, and personalized legal solutions. Our seasoned team, led by Founder Rishabh Malhotra (Advocate), is dedicated to understanding your unique needs and providing tailored advice and representation. Trust in our experience to navigate the complexities of the legal landscape and advocate fiercely on your behalf.</p>
+      <h5 class="font-bold mt-[15px]">Rizwan Khan</h5>
+      <p class="text-gray-400">CEO, Loreum Ipsum</p>
+
+        </div>
+        <div class="item p-2">
+          <p class="text-[20px]">At SEERAJ LEGAL RELIEF FOUNDATION  Advocates and Associates, we bring years of experience across various practice areas, ensuring you receive informed, effective, and personalized legal solutions. Our seasoned team, led by Founder Rishabh Malhotra (Advocate), is dedicated to understanding your unique needs and providing tailored advice and representation. Trust in our experience to navigate the complexities of the legal landscape and advocate fiercely on your behalf.</p>
+          <h5 class="font-bold mt-[15px]">Rizwan Khan</h5>
+          <p class="text-gray-400">CEO, Loreum Ipsum</p>
+    
+            </div>
+            <div class="item p-2">
+              <p class="text-[20px]">At SEERAJ LEGAL RELIEF FOUNDATION  Advocates and Associates, we bring years of experience across various practice areas, ensuring you receive informed, effective, and personalized legal solutions. Our seasoned team, led by Founder Rishabh Malhotra (Advocate), is dedicated to understanding your unique needs and providing tailored advice and representation. Trust in our experience to navigate the complexities of the legal landscape and advocate fiercely on your behalf.</p>
+              <h5 class="font-bold mt-[15px]">Rizwan Khan</h5>
+              <p class="text-gray-400">CEO, Loreum Ipsum</p>
+        
+                </div>
+       
+       
+          </div>
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <section id="our-work" class=" pb-[110px]">
+
+    <div class="container mx-auto">
+
+      <h3 class="p-color text-[64px] p-font text-center mb-[10px]">Our Work Stream</h3>
+      <div class="pera w-[35%] mx-auto px-6/6 mb-[50px]">
+        <p class="text-[16px] s-font p-color text-center">FASTER & AMICABLY RESOLUTION,QUICK RESPONSE </p>
+      </div>
+  
+
+      <div class="grid lg:grid-cols-4 2xl:grid-cols-4 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 grid-cols-1">
+        <div class="p-5 border-[#1F3044] border-b border-r border-b-1 border-r-1 box hover:bg-[#1F3044]">
+          <div class="img mx-auto">
+            <img class="mx-auto" src="./images/building 1.png" alt="">
+          </div>
+
+          <div class="text text-center">
+
+            <h4 class="font-bold">BANKING  DISPUTES</h4>
+            <p class="text-[10px] text-center px-5 py-3">Figma ipsum component variant main layer. Image flows overflow shadow create layout select select.</p>
+          </div>
+
+        </div>
+        
+        <div class="p-5 border-[#1F3044] border-b border-r border-b-1 border-r-1 box hover:bg-[#1F3044]">
+          <div class="img mx-auto">
+            <img class="mx-auto" src="./images/building (1) 1.png" alt="">
+          </div>
+
+          <div class="text text-center">
+
+            <h4 class="font-bold"> COMMERCIAL  DISPUTES</h4>
+            <p class="text-[10px] text-center px-5 py-3">Figma ipsum component variant main layer. Image flows overflow shadow create layout select select.</p>
+          </div>
+
+        </div>
+
+        <div class="p-5 border-[#1F3044] border-b border-r border-b-1 border-r-1 box hover:bg-[#1F3044]">
+          <div class="img mx-auto">
+            <img class="mx-auto" src="./images/property-document 1.png" alt="">
+          </div>
+
+          <div class="text text-center">
+
+            <h4 class="font-bold">PROPERTY  DISPUTES</h4>
+            <p class="text-[10px] text-center px-5 py-3">Figma ipsum component variant main layer. Image flows overflow shadow create layout select select.</p>
+          </div>
+
+        </div>
+
+
+        <div class="p-5 border-[#1F3044] border-b  border-b-1 box hover:bg-[#1F3044]">
+          <div class="img mx-auto">
+            <img class="mx-auto" src="./images/landlord (1) 1.png" alt="">
+          </div>
+
+          <div class="text text-center">
+
+            <h4 class="font-bold"> LANDLORD-TENANT DISPUTES</h4>
+            <p class="text-[10px] text-center px-5 py-3">Figma ipsum component variant main layer. Image flows overflow shadow create layout select select.</p>
+          </div>
+
+        </div>
+
+
+        <div class="p-5 border-[#1F3044] border-r  border-r-1 box hover:bg-[#1F3044]">
+          <div class="img mx-auto">
+            <img class="mx-auto" src="./images/claim 1.png" alt="">
+          </div>
+
+          <div class="text text-center">
+
+            <h4 class="font-bold">INSURANCE   DISPUTES</h4>
+            <p class="text-[10px] text-center px-5 py-3">Figma ipsum component variant main layer. Image flows overflow shadow create layout select select.</p>
+          </div>
+
+        </div>
+
+
+        <div class="p-5 border-[#1F3044]  border-r  border-r-1 box hover:bg-[#1F3044]">
+          <div class="img mx-auto">
+            <img class="mx-auto" src="./images/family-law 1.png" alt="">
+          </div>
+
+          <div class="text text-center">
+
+            <h4 class="font-bold">MATRIMONIAL   DISPUTES</h4>
+            <p class="text-[10px] text-center px-5 py-3">Figma ipsum component variant main layer. Image flows overflow shadow create layout select select.</p>
+          </div>
+
+        </div>
+
+
+        <div class="p-5 border-[#1F3044]    border-r  border-r-1 hover:bg-[#1F3044] box ">
+          <div class="img mx-auto">
+            <img class="mx-auto" src="./images/worker 1.png" alt="">
+          </div>
+
+          <div class="text text-center">
+
+            <h4 class="font-bold"> CIVIL   DISPUTES</h4>
+            <p class="text-[10px] text-center px-5 py-3">Figma ipsum component variant main layer. Image flows overflow shadow create layout select select.</p>
+          </div>
+
+        </div>
+
+
+        <div class="p-5 border-[#1F3044] box hover:bg-[#1F3044] flex justify-center items-center">
+
+       
+
+          <div class="text text-center">
+
+            <a class="text-[30px] font-bold" href="#">Others</a>
+          </div>
+
+        </div>
+
+        
+    </div>
+
+
+    </div>
+
+  </section>
+
+  <section id="goals" class="bg-[#1F3044] pt-[50px] pb-[50px] ">
+    <div class="container mx-auto">
+
+      <h3 class="text-[#fff] text-[64px] p-font text-center mb-[10px]">Our Goals</h3>
+      <div class="pera w-[35%] mx-auto px-6/6 mb-[50px] ">
+        <p class="text-[16px] s-font text-[#fff] text-center">FASTER & AMICABLY RESOLUTION,QUICK RESPONSE </p>
+      </div>
+      <div class="flex  	flex-wrap justify-center">
+
+<div class="wraper p-4 w-1/3">
+
+  <div class="border-2 p-6 rounded-[30px] h-full box" >
+  <span class="num text-[#fff]  bg-[#1F3044] px-3">1</span>
+    <p class="text-white text-justify text-[16px]">
+    To develop, promote, facilitate, and otherwise engage in the Alternative Dispute Resolution (ADR) mechanism methods, program, expert advice, consultancy, recruiting, guidance, support and related services and to act as an entity for promoting, encouraging, and providing ADR services.
+  </p>
+  
+  
+  </div>
+</div>
+
+<div class="wraper p-4 w-1/3">
+  <div class="border-2 p-6 rounded-[30px] h-full box" >
+    <span class="num text-[#fff]  bg-[#1F3044] px-3">2</span>
+    <p class="text-white text-justify text-[16px]">
+      To substitute, administer, manage and provide alternatives to conventional means of resolving disputes, including civil, commercial, industrial, tax, finance and family matters, through mechanisms such as Arbitration, Reconciliation, Mediation, Negotiation, Lok-Adalat, and other ADR methods.
+  </p>
+  
+  
+  </div>
+</div>
+
+<div class="wraper p-4 w-1/3">
+  <div class="border-2 p-6 rounded-[30px] h-full box" >
+    <span class="num text-[#fff]  bg-[#1F3044] px-3">3</span>
+    <p class="text-white text-justify text-[16px]">
+      To collaborate with individuals, organizations, governmental bodies, and institutions, both national and international, for the promotion and development of ADR mechanisms.
+  </p>
+  
+  
+  </div>
+</div>
+
+<div class="wraper p-4 w-1/3">
+  <div class="border-2 p-6 rounded-[30px] h-full box" >
+    <span class="num text-[#fff]  bg-[#1F3044] px-3">4</span>
+    <p class="text-white text-justify text-[16px]">
+      To carry on the Activity like organizing seminars, workshops, awareness camps, conference, Counseling and training program both online and offline for Promoting, Imparting, Launching, Creating, Training, Adopting, promoting and development of ADR mechanisms, amongst the masses of India and Abroad.
+  </p>
+  
+  
+  </div>
+</div>
+
+<div class="wraper p-4 w-1/3">
+  <div class="border-2 p-6 rounded-[30px] h-full box" >
+    <span class="num text-[#fff]  bg-[#1F3044] px-3">5</span>
+    <p class="text-white text-justify text-[16px]">
+      To extend ADR services to the entire territory of India and establish offices, branches, or centers in various regions for the efficient functioning of ADR processes.
+  </p>
+  
+  
+  </div>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="bg-[#182738] py-3">
+<div class="container mx-auto">
+
+  <div class="heading mb-2">
+    <h3 class="p-font text-[36px] text-center text-white">OFFICE ADDRESS:-</h3>
+  </div>
+
+  <p class="text-[24px] text-center text-white">E- 273, 2nd floor, LalKothi Scheme, Barkat Nagar, Jaipur, Rajasthan, India, 302015</p>
+</div>
+
+  </footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $(".s-carousel.owl-carousel").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: true,
+          dots:false,
+          autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+          responsive: {
+              0: {
+                  items: 1,
+                  nav: false,
+              },
+              600: {
+                  items: 2
+              },
+
+             
+              1000: {
+                  items: 3
+              }
+          }
+      });
+    });
+  </script>
+
+<script>
+  $(document).ready(function(){
+    $(".t-carousel.owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        dots:true,
+        autoplay:false,
+  autoplayTimeout:3000,
+  autoplayHoverPause:true,
+        responsive: {
+            0: {
+                items: 1
+
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+  });
+</script>
+<script>function toggleSidebar() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('-translate-x-full');
+}</script>
+</body>
+
+</html>

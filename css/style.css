@@ -1,0 +1,376 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+
+:root {
+  --primary-font:"Cormorant Garamond", serif;
+  --secondary-font: "Manrope", sans-serif;
+  --primary-color: #0E1926;
+  --secondary-color:#CB935D;
+  --font-size: 16px;
+
+}
+
+.p-back{
+background: var(--primary-color);
+}
+
+.p-font{
+  font-family: var(--primary-font);
+}
+
+.s-font{
+  font-family: var(--secondary-font);
+}
+
+.p-color{
+color: var(--primary-color);
+}
+
+.s-color{
+  color: var(--secondary-color);
+}
+/* Navbar */
+
+
+.nav-bar .container {
+
+  margin: 0 auto;
+  padding: 0 20px; /* Add padding to the container */
+}
+
+.nav-bar img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sidebar */
+#sidebar {
+  background-color: #333; /* Adjust color as needed */
+  width: 260px; /* Sidebar width */
+  height: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 110px; /* Adjust padding to account for navbar height */
+}
+
+#sidebar.show {
+  transform: translateX(0);
+}
+
+#sidebar nav {
+  padding: 20px;
+}
+
+#sidebar nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+}
+
+#sidebar nav a:hover {
+  background-color: #555; /* Hover background color */
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  background: url('../images/home-bg.png');
+  background-size: cover;
+}
+
+#hero .inner-hero {
+  background: rgb(24, 39, 56);
+  background: linear-gradient(145deg, rgba(24, 39, 56, 1) 0%, rgba(24, 39, 56, 0.40) 100%);
+}
+
+#hero nav.nav-bar a {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hero-content {
+  padding: 0 20px; /* Add padding to hero content */
+}
+
+.hero-content p {
+  font-size: 16px;
+  color: #fff; /* Set text color */
+}
+
+.hero-content h1 {
+  font-size: 55px;
+  color: #fff; /* Set text color */
+  line-height: normal;
+}
+
+.hero-content h1 span {
+  color: #CB935D; /* Set span text color */
+  font-style: italic; /* Set font style */
+}
+
+.hero-content a {
+  display: inline-block;
+  padding: 15px 45px; /* Set padding */
+  font-size: 24px; /* Set font size */
+  color: #fff; /* Set text color */
+  background-color: #CB935D; /* Set background color */
+  text-decoration: none;
+}
+
+/* Image Box */
+.img-box img {
+  width: 100%;
+  height: 570px;
+  object-fit: cover;
+  border-radius: 80px;
+}
+
+#sidebar {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+#sidebar.show {
+  transform: translateX(0);
+} 
+
+
+.heading-1{
+  font-family: var(--primary-font);
+  line-height: normal;
+}
+
+.pera-1{
+  font-family: var(--secondary-font);
+}
+
+#achive{
+  position: relative;
+}
+
+#achive .element-1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#about{
+  position: relative;
+}
+
+#about .flex img{
+position: relative;
+z-index: 2;
+}
+
+#about .element-2{
+
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  z-index: 1;
+}
+
+#service{
+  position: relative;
+}
+
+#service .element-3{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#service .element-4{
+  position: absolute;
+  bottom: 0;
+
+}
+
+.owl-carousel.s-carousel .item {
+  height: 400px;
+width: 100%;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel.s-carousel .item  .card{
+
+overflow: hidden;
+/* transition: bottom 0.5s ease-in-out; */
+position: relative;
+}
+
+.owl-carousel.s-carousel .item .card .inner-card {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(24, 39, 56, 0) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* transition: all 0.5s ease-in-out; */
+  top: 0;
+}
+
+.owl-carousel.s-carousel .item .card .inner-card .h-btn {
+  position: absolute;
+  bottom: -13%;
+  text-align: center;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Add a hover state to trigger the transition */
+
+
+
+
+    .owl-carousel.s-carousel .item  .card .inner-card:hover .h-btn{
+   top: 30%;
+   transition: all 0.5s ease-in-out;
+      }
+
+      #service .card .image{
+        height: 100%;
+        object-fit: cover;
+      }
+
+
+      #service .owl-carousel.s-carousel .owl-nav button.owl-next {
+  font-size: 0px;
+      
+    }
+
+    
+    #service .owl-carousel.s-carousel .owl-nav button.owl-prev {
+      font-size: 0px;
+          
+        }
+
+    #service .owl-carousel.s-carousel .owl-nav button.owl-next::after{
+      content: '\f061';
+       font-family: "Font Awesome 6 Free";
+       font-weight: 700;
+      color: #0E1926;
+      width: 50px;
+      height: 50px;
+     background-color: #fff;
+     position: absolute;
+     font-size: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     border: 1px solid #CB935D;
+     color: #CB935D;
+right: 0%;
+  }
+
+  #service .owl-carousel.s-carousel .owl-nav button.owl-prev::after{
+    content: '\f060';
+     font-family: "Font Awesome 6 Free";
+     font-weight: 700;
+    color: #0E1926;
+    width: 50px;
+    height: 50px;
+   background-color: #fff;
+   position: absolute;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   border: 1px solid #CB935D;
+   color: #CB935D;
+right: 5%;
+}
+
+
+/* #testi .owl-carousel .owl-dots.disabled{
+  display: block;
+} */
+
+
+#testi .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #CB935D;
+zoom: 1;
+  vertical-align: middle;
+  transition: all .5s ease-in-out;
+}
+
+#testi .owl-theme .owl-dots .owl-dot {
+ 
+  vertical-align: middle;
+}
+
+#our-work .box{
+transition: all .5s ease-in-out;
+}
+#our-work .box:hover .text h4{
+  color: #fff !important;
+}
+
+#our-work .box:hover .text P{
+  color: #fff !important;
+}
+
+#our-work .box:hover .text a{
+  color: #fff !important;
+}
+
+#our-work .box:hover .img img{
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
+}
+
+#our-work .box .img img{
+  height: 80px;
+}
+
+
+#goals .wraper div{
+position: relative;
+}
+
+#goals .wraper div .num{
+ 
+  font-size: 30px;
+  position: absolute;
+  top: -26px;
+
+
+  }
+
+

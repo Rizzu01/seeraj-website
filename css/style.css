@@ -52,17 +52,27 @@ color: var(--primary-color);
   background-color: #333; /* Adjust color as needed */
   width: 260px; /* Sidebar width */
   height: 100%;
-  transform: translateX(-100%);
+ 
   transition: transform 0.3s ease-in-out;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 110px; /* Adjust padding to account for navbar height */
+  padding-top: 110px; 
+  transition: transform 0.3s ease-in-out;/* Adjust padding to account for navbar height */
 }
 
-#sidebar.show {
+/* Essential styles for the sidebar transition */
+
+
+/* Ensure initial state is hidden */
+.translate-x-0 {
   transform: translateX(0);
 }
+
+.-translate-x-full {
+  transform: translateX(-100%);
+}
+
 
 #sidebar nav {
   padding: 20px;
@@ -104,6 +114,7 @@ color: var(--primary-color);
   background-size: cover;
 }
 
+
 #hero .inner-hero {
   background: rgb(24, 39, 56);
   background: linear-gradient(145deg, rgba(24, 39, 56, 1) 0%, rgba(24, 39, 56, 0.40) 100%);
@@ -115,11 +126,11 @@ color: var(--primary-color);
   font-weight: 400;
 }
 
-.hero-content {
+#hero .hero-content {
   padding: 0 20px; /* Add padding to hero content */
 }
 
-.hero-content p {
+#hero .hero-content p {
   font-size: 16px;
   color: #fff; /* Set text color */
 }
@@ -130,12 +141,12 @@ color: var(--primary-color);
   line-height: normal;
 }
 
-.hero-content h1 span {
+#hero .hero-content h1 span {
   color: #CB935D; /* Set span text color */
   font-style: italic; /* Set font style */
 }
 
-.hero-content a {
+#hero .hero-content a {
   display: inline-block;
   padding: 15px 45px; /* Set padding */
   font-size: 24px; /* Set font size */
@@ -374,3 +385,14 @@ position: relative;
   }
 
 
+  #s-hero {
+    height: 100%;
+    background: url('../images/s-hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #s-hero .inner-hero {
+    background: rgb(24, 39, 56);
+    background: linear-gradient(145deg, rgba(24, 39, 56, 1) 0%, rgba(24, 39, 56, 0.40) 100%);
+  }

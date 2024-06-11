@@ -1,65 +1,235 @@
-<section id="hero" class="mb-[110px] md:mb-[70px] sm:mb-[50px]">
-    <div class="inner-hero h-full">
-      <header class="text-white nav-bar">
-        <div class="container mx-auto flex justify-between items-center p-4">
-          <div class="text-xl font-bold">
-            <img src="./images/logo.png" alt="Logo">
-          </div>
-          <div class="lg:hidden">
-            <button class="text-white" onclick="toggleSidebar()">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-            </button>
-          </div>
-          <nav class="hidden lg:flex lg:space-x-8 nav-bar">
-            <a href="#" class="hover:text-gray-300">Home</a>
-            <a href="#" class="hover:text-gray-300">About</a>
-            <a href="#" class="hover:text-gray-300">Services</a>
-            <a href="#" class="hover:text-gray-300">Contact</a>
-          </nav>
-        </div>
-      </header>
-      <div id="sidebar" class="fixed inset-y-0 left-0 transform -translate-x-full transition-transform duration-300 ease-in-out bg-gray-800 text-white w-64 lg:hidden">
-        <div class="flex justify-end p-4">
-          <button class="text-white" onclick="toggleSidebar()">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-        </div>
-        <nav class="flex flex-col space-y-4 p-4">
-          <a href="#" class="hover:text-gray-300">Home</a>
-          <a href="#" class="hover:text-gray-300">About</a>
-          <a href="#" class="hover:text-gray-300">Services</a>
-          <a href="#" class="hover:text-gray-300">Contact</a>
-        </nav>
-      </div>
-      <div class="hero-content container mx-auto p-4 mt-10 lg:mt-20">
-        <div class="flex flex-col lg:flex-row items-center">
-          <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
-            <p class="text-[16px] text-white mb-[40px] sub-head">GET FIERCE LEGAL SUPPORT</p>
-            <h1 class="2xl:text-[64px] xl:text-56 lg:text-48 text-white mb-[15px] font-normal p-font">
-              We Provide The Best
-              <br>
-              Possible <span class="text-[#CB935D] italic">Legal Services</h1>
-                    <p class="text-[16px] text-white mb-[25px] lg:pr-[45px] pera-1">Vitae auctor eu augue ut lectus arcu. Dictum
-                        fusce ut placerat orci nulla pellentesque dignissim enim. Enim nunc faucibus a pellentesque sit amet
-                        porttitor eget dolor.</p>
-
-                    <div class="btn-c">
-                      <a class="p-font bg-[#CB935D] text-white py-[15px] px-[45px] text-[24px]"
-                          href="#">Contact Us</a>
-                    </div>
-                </div>
-
-                <div class="w-full lg:w-1/2">
-                    <div class="img-box w-full max-w-[570px] lg:ms-auto">
-                        <img class="w-full h-[570px] rounded-[80px] object-cover" src="./images/img-hero.jpg" alt="Hero Image">
-                    </div>
-                </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <section id="s-hero" class="mb-[110px] md:mb-[70px] sm:mb-[50px]">
+        <div class="inner-hero h-full">
+          <header class="text-white nav-bar">
+            <div class="container mx-auto flex justify-between items-center p-4">
+              <div class="text-xl font-bold">
+                <img src="./images/logo.png" alt="Logo">
+              </div>
+              <div class="lg:hidden">
+                <button class="text-white" onclick="toggleSidebar()">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+                </button>
+              </div>
+              <nav class="hidden lg:flex lg:space-x-8 nav-bar">
+                <a href="#" class="hover:text-gray-300">Home</a>
+                <a href="#" class="hover:text-gray-300">About</a>
+                <a href="#" class="hover:text-gray-300">Services</a>
+                <a href="#" class="hover:text-gray-300">Contact</a>
+              </nav>
             </div>
+          </header>
+          <div id="sidebar" class="fixed inset-y-0 left-0 transform -translate-x-full transition-transform duration-300 ease-in-out bg-gray-800 text-white w-64 lg:hidden">
+            <div class="flex justify-end p-4">
+              <button class="text-white" onclick="toggleSidebar()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <nav class="flex flex-col space-y-4 p-4">
+              <a href="#" class="hover:text-gray-300">Home</a>
+              <a href="#" class="hover:text-gray-300">About</a>
+              <a href="#" class="hover:text-gray-300">Services</a>
+              <a href="#" class="hover:text-gray-300">Contact</a>
+            </nav>
+          </div>
+          <div class="hero-content container mx-auto p-4 mt-10 lg:mt-20">
+            <div class="headings">
+              <h3 class="text-white text-[80px] p-font text-center mb-[10px]">Our Achievements</h3>
+              <div class=" mx-auto px-6/6 mb-[50px]">
+                <p class="text-[30px] text-white s-font p-color text-center p-2">The dispute will resolve quickly and peacefully method .It take many years in the procedure of court trial. Due to the pendency of cases and rigid procedural laws of the courts.Moreover it involves physical appearances before the courts and tribunals.</p>
+              </div>
+            </div>
+            </div>
+    
         </div>
+    </section>
 
+    <section id="service-col" class=" pb-[110px]">
+<div class="container mx-auto px-4">
+
+  <div class="sec-1">
+    <div class="heading">
+      <h3 class="text-center text-[65px] p-font mb-[50px]">ARBITRATION</h3>
     </div>
-</section>
+    <div class="grid 2xl:grid-cols-2 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 grid-cols-1  gap-10">
+    
+    <div class="col ">
+    <div class="box-img h-full rounded-br-[60px] overflow-hidden">
+    <img class="h-full object-cover" src="./images/services-1.jpg" alt="">
+    </div>
+    </div>
+    
+    <div class="col ">
+    <div class="box-text ">
+    <p class="text-[23px]">
+    Arbitration is a form of alternative dispute resolution (ADR).The only difference between arbitration and trial is arbitration takes place outside of the court. Document verification, hearings, evidence reviews, and the decision are the same as in court manner. It is formal and legally binding in nature. According to section 2 of the Arbitration and Conciliation Act 1996, “Arbitration means any arbitration whether or not administered by permanent arbitral institution”. Due to certain issues and disadvantages ‘The Arbitration and Conciliation Act, of 1996’ was recently amended in the year 2015. As arbitration happens between both parties and the arbitrator remains Privacy and confidentiality of both party matter remain secret. Also, arbitration is more flexible. The present date of arbitration law is a formation of several promulgations and ordinances passed by the government of India to meet the economic reforms taking place in the country from time to time. Arbitration Law in India, is primary contained in the Act of 1996. An Act that was passed to consolidate the laws relating to domestic, international arbitration and its enforcement.
+    </p>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  
+</div>
+
+
+    </section>
+
+    <section id="service-col-2" class=" pb-[110px]">
+      <div class="container mx-auto px-4">
+      
+        <div class="sec-1">
+          <div class="heading">
+            <h3 class="text-center text-[65px] p-font mb-[50px]">MEDIATION</h3>
+          </div>
+          <div class="grid 2xl:grid-cols-2 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 grid-cols-1  gap-10">
+          
+         
+          
+          <div class="col 2xl:order-none xl:order-1 lg-order-1 md:order-1 order-1">
+          <div class="box-text ">
+          <p class="text-[23px]">
+            It is the another form of ADR to the parties to solve disputes. Mediation has grown as the most advanced form of ADR mechanism. It is one of the methods for handling human relationships in a positive manner, mainly for the good of the people involved and for the betterment of the community.
+            Mediation encourages a search for the solution by the parties themselves, involved in the dispute. The basic motive of mediation is to provide opportunities to parties to negotiate and come to a final solution catering the needs of both sides. It is an assisted negotiation and an informal process in which parties are aided by a third impartial person, who is the mediator, possessing specialized skills, requisite training and sufficient experience necessary to assist the disputed parties for reaching a negotiated settlement.
+             Mediation promotes active and direct participation of the parties. The function of the mediator is mainly that of a facilitator.
+            Mediation is a confidential process and whatever transpires in the mediation is not subject to disclosure without the written consent of all the disputant-parties.
+          </p>
+          </div>
+          </div>
+
+          <div class="col ">
+            <div class="box-img h-full rounded-bl-[60px] overflow-hidden">
+            <img class="h-full object-cover w-full" src="./images/services-2.jpg" alt="">
+            </div>
+            </div>
+          </div>
+        </div>
+      
+        
+      </div>
+      
+      
+          </section>
+
+          <section id="service-col-3" class=" pb-[110px]">
+            <div class="container mx-auto px-4">
+            
+              <div class="sec-1">
+                <div class="heading">
+                  <h3 class="text-center text-[65px] p-font mb-[50px]">CONCILIATION</h3>
+                </div>
+                <div class="grid 2xl:grid-cols-2 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 grid-cols-1  gap-10">
+
+                
+                <div class="col ">
+                <div class="box-img h-full  rounded-br-[60px] overflow-hidden">
+                <img class="h-full object-cover w-full" src="./images/services-3.jpg" alt="">
+                </div>
+                </div>
+                
+                <div class="col ">
+                <div class="box-text ">
+                <p class="text-[23px]">
+                  Conciliation is a type of ADR where the settlement is made out of court. There is no involvement of the court in the whole arbitral proceedings. The dispute is settled by a neutral third party, who is the conciliator. The conciliation process is voluntary as it is on the mutual discretion of the parties to choose conciliation as a method of resolving their dispute with the assistance of the conciliator, also the proposal is not binding upon the parties. Conciliation is an alternative dispute resolution mechanism which has been given statutory recognition by incorporating provisions in Sections 61  to  81  of  Part  III  of  the  Arbitration  and Conciliation Act, 1996.
+                  They are free to follow or not follow the proposal given by the conciliator. It presides over litigation because the parties do not have to go through the technical procedures and formalities of litigation, instead, conciliation allows parties for a friendly search to reach an amicable solution. 
+                  
+                  
+                </div>
+                </div>
+                </div>
+              </div>
+            
+              
+            </div>
+            
+            
+                </section> 
+
+                <section id="service-col-4" class=" pb-[110px]">
+                  <div class="container mx-auto px-4">
+                  
+                    <div class="sec-1">
+                      <div class="heading">
+                        <h3 class="text-center text-[65px] p-font mb-[50px]">NEGOTIATION</h3>
+                      </div>
+                      <div class="grid 2xl:grid-cols-2 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 grid-cols-1  gap-10">
+
+                     
+                      
+                        <div class="col 2xl:order-none xl:order-1 lg-order-1 md:order-1 order-1">
+                      <div class="box-text ">
+                      <p class="text-[23px]">
+                        Any form of direct or indirect communication in which parties with divergent interests debate potential collaborative actions to manage and ultimately resolve their conflict is referred to as negotiation. Negotiations can be used to establish a future relationship between two or more parties or to settle an issue that has already arisen. 
+                        Negotiation has also been characterized as the “preeminent mode of dispute resolution which is hardly surprising given its presence in virtually all aspects of everyday life, whether at the individual, institutional, national or global level. Each negotiation is unique, differing from one another in terms of subject matter, the number of participants and the process used.
+                        Given the presence of negotiation in daily life, it is not surprising to find that negotiation can also be applied within the context of other dispute resolution processes, such as mediation and litigation settlement conferences.
+                      </p>
+                      </div>
+                      </div>
+            
+                      <div class="col ">
+                        <div class="box-img h-full rounded-bl-[60px] overflow-hidden">
+                        <img class="h-full w-full object-cover" src="./images/services-5.jpg" alt="">
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    
+                  </div>
+                  
+                  
+                      </section>
+
+                      <section id="service-col-5" class=" pb-[110px]">
+                        <div class="container mx-auto px-4">
+                        
+                          <div class="sec-1">
+                            <div class="heading">
+                              <h3 class="text-center text-[65px] p-font mb-[50px]">ARBITRATION</h3>
+                            </div>
+                            <div class="grid 2xl:grid-cols-2 xl:grid-cols-1 lg:grid-cols-1 md:grid-cols-1 grid-cols-1  gap-10">
+                            
+                            <div class="col ">
+                            <div class="box-img h-full rounded-br-[60px] overflow-hidden">
+                            <img class="h-full w-full object-cover" src="./images/services-6.jpg" alt="">
+                            </div>
+                            </div>
+                            
+                            <div class="col ">
+                            <div class="box-text ">
+                            <p class="text-[23px]">
+                              LokAdalat is one of the alternative dispute redressal mechanisms, it is a forum where disputes/cases pending in the court of law or at pre-litigation stage are settled/ compromised amicably. LokAdalats have been given statutory status under the Legal Services Authorities Act, 1987. Under the said Act, the award (decision) made by the LokAdalats is deemed to be a decree of a civil court and is final and binding on all parties and no appeal against such an award lies before any court of law. If the parties are not satisfied with the award of the LokAdalat though there is no provision for an appeal against such an award, but they are free to initiate litigation by approaching the court of appropriate jurisdiction by filing a case by following the required procedure, in exercise of their right to litigate.
+There is no court fee payable when a matter is filed in a LokAdalat.
+                              
+                            </div>
+                            </div>
+                            </div>
+                          </div>
+                        
+                          
+                        </div>
+                        
+                        
+                            </section> 
+</body>
+</html>

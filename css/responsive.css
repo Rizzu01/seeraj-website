@@ -12,7 +12,7 @@
     }
 
     #achive .pera {
-        width: 100%;
+        width: 100% !important;
     }
 
     .hero-content h1 {
@@ -47,7 +47,7 @@ margin-bottom: 20px;
 
 @media(max-width:1069px){
     .pera{
-        width: 100%;
+        width: 100% !important;
     } 
 }
 
@@ -199,6 +199,7 @@ margin-bottom: 20px;
 @media(max-width:992px){
     .pera{
         margin-bottom: 20px;
+        width: 100% !important;
     } 
 
     .owl-theme .owl-nav {

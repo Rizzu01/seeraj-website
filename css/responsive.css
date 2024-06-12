@@ -360,6 +360,10 @@ footer .heading h3{
     .heading h3{
         margin-bottom: 30px;
     }
+
+    footer .heading h3{
+        margin-bottom: 0px;
+    }
   
 }
 

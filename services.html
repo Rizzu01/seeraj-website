@@ -233,5 +233,34 @@ There is no court fee payable when a matter is filed in a LokAdalat.
                         
                         
                             </section> 
+                            <script>
+                              const menuButton = document.getElementById('menuButton');
+                              const closeButton = document.getElementById('closeButton');
+                              const sidebar = document.getElementById('sidebar');
+                              const backdrop = document.getElementById('backdrop');
+                            
+                              menuButton.addEventListener('click', () => {
+                                  sidebar.classList.remove('sidebar-closed');
+                                  sidebar.classList.add('sidebar-open');
+                                  backdrop.classList.remove('backdrop-hidden');
+                                  backdrop.classList.add('backdrop-visible');
+                              });
+                            
+                              closeButton.addEventListener('click', () => {
+                                  sidebar.classList.remove('sidebar-open');
+                                  sidebar.classList.add('sidebar-closed');
+                                  backdrop.classList.remove('backdrop-visible');
+                                  backdrop.classList.add('backdrop-hidden');
+                              });
+                            
+                              backdrop.addEventListener('click', () => {
+                                  sidebar.classList.remove('sidebar-open');
+                                  sidebar.classList.add('sidebar-closed');
+                                  backdrop.classList.remove('backdrop-visible');
+                                  backdrop.classList.add('backdrop-hidden');
+                              });
+                            </script>
 </body>
+
+
 </html>

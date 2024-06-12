@@ -120,7 +120,7 @@ color: var(--primary-color);
   background: linear-gradient(145deg, rgba(24, 39, 56, 1) 0%, rgba(24, 39, 56, 0.40) 100%);
 }
 
-#hero nav.nav-bar a {
+ nav.nav-bar a {
   font-family: var(--primary-font);
   font-size: 24px;
   font-weight: 400;
@@ -393,6 +393,18 @@ position: relative;
   }
 
   #s-hero .inner-hero {
+    background: rgb(24, 39, 56);
+    background: linear-gradient(145deg, rgba(24, 39, 56, 1) 0%, rgba(24, 39, 56, 0.40) 100%);
+  }
+
+  #c-hero {
+    height: 100%;
+    background: url('../images/s-hero.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #c-hero .inner-hero {
     background: rgb(24, 39, 56);
     background: linear-gradient(145deg, rgba(24, 39, 56, 1) 0%, rgba(24, 39, 56, 0.40) 100%);
   }

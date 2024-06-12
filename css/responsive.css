@@ -236,12 +236,28 @@ width: 50%;
 footer .heading h3{
     font-size: 20px;
 }
+
+.add p{
+    font-size: 15px;
+}
 }
 
 @media(max-width:767px){
     #service .element-3, .element-4 {
        
         width: 150px;
+    }
+
+    #contact-sec .flex .box{
+        width: 100%;
+
+    }
+    .add p {
+        font-size: 20px;
+    }
+
+    .icon span{
+        font-size: 60px;
     }
 }
 
@@ -281,6 +297,13 @@ footer .heading h3{
     }
     #goals .wraper{
         width: 100%;
+        }
+
+
+        #contact-sec .flex .box .inputs .flex .in-box{
+            width: 100%;
+            padding: 0;
+    
         }
 }
 
@@ -343,6 +366,10 @@ footer .heading h3{
      
         right: 18%;
     }
+#contact-sec form textarea{
+    height: 180px;
+}
+    
 }
 
 @media(max-width:359px){

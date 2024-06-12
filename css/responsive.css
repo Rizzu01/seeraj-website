@@ -202,7 +202,11 @@ footer .heading p{
 }
 
 #s-hero{
-    margin-bottom: 70px;
+    margin-bottom: 70px !important;
+}
+
+#c-hero{
+    margin-bottom: 70px !important;
 }
   
 }
@@ -246,6 +250,10 @@ footer .heading h3{
 }
 
 #s-hero{
+    margin-bottom: 50px;
+}
+
+#c-hero{
     margin-bottom: 50px;
 }
 }

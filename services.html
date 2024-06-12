@@ -19,39 +19,55 @@
         <div class="inner-hero h-full">
           <header class="text-white nav-bar pt-5">
             <div class="container mx-auto flex justify-between items-center p-4">
-              <div class="text-xl font-bold w-[200px]">
-                <img src="./images/logo.png" alt="Logo">
-              </div>
-              <div class="lg:hidden">
-                <button class="text-white" onclick="toggleSidebar()">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                  </svg>
-                </button>
-              </div>
-              <nav class="hidden lg:flex lg:space-x-8 nav-bar">
-                <a href="#" class="hover:text-gray-300">Home</a>
-                <a href="#" class="hover:text-gray-300">About</a>
-                <a href="#" class="hover:text-gray-300">Services</a>
-                <a href="#" class="hover:text-gray-300">Contact</a>
-              </nav>
+                <div class="text-xl font-bold w-[200px]">
+                    <img src="./images/logo.png" alt="Logo">
+                </div>
+                <div class="lg:hidden">
+                    <button class="text-white" id="menuButton">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav class="hidden lg:flex lg:space-x-8 nav-bar">
+                    <a href="index.html" class="hover:text-gray-300">Home</a>
+                    <a href="#" class="hover:text-gray-300">About</a>
+                    <a href="./services.html" class="hover:text-gray-300">Services</a>
+                    <a href="./contact.html" class="hover:text-gray-300">Contact</a>
+                </nav>
             </div>
-          </header>
-          <div id="sidebar" class="fixed inset-y-0 left-0 transform -translate-x-full transition-transform duration-300 ease-in-out bg-gray-800 text-white w-64 lg:hidden">
+        </header>
+        
+        <!-- Sidebar -->
+        <div id="sidebar" class="fixed inset-y-0 left-0 transform -translate-x-full transition-transform duration-300 ease-in-out bg-gray-800 text-white w-64 lg:hidden" style="z-index: 999;">
             <div class="flex justify-end p-4">
-              <button class="text-white" onclick="toggleSidebar()">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-              </button>
+                <button class="text-white" id="closeButton">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
             </div>
             <nav class="flex flex-col space-y-4 p-4">
-              <a href="./index.html" class="hover:text-gray-300">Home</a>
-              <a href="#" class="hover:text-gray-300">About</a>
-              <a href="#" class="hover:text-gray-300">Services</a>
-              <a href="#" class="hover:text-gray-300">Contact</a>
+                <a href="./index.html" class="hover:text-gray-300">Home</a>
+                <a href="#" class="hover:text-gray-300">About</a>
+                <a href="./services.html" class="hover:text-gray-300">Services</a>
+                <a href="./contact.html" class="hover:text-gray-300">Contact</a>
             </nav>
-          </div>
+        </div>"sidebar" class="fixed inset-y-0 left-0 transform -translate-x-full transition-transform duration-300 ease-in-out bg-gray-800 text-white w-64 lg:hidden" style="z-index: 999;">
+            <div class="flex justify-end p-4">
+                <button class="text-white" id="closeButton">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4 p-4">
+                <a href="./index.html" class="hover:text-gray-300">Home</a>
+                <a href="#" class="hover:text-gray-300">About</a>
+                <a href="./services.html" class="hover:text-gray-300">Services</a>
+                <a href="./contact.html" class="hover:text-gray-300">Contact</a>
+            </nav>
+        </div>
           <div class="hero-content container mx-auto p-4 mt-10 lg:mt-20">
             <div class="headings">
               <h3 class="text-white text-[80px] p-font text-center mb-[10px]">Our Achievements</h3>

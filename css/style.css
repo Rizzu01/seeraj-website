@@ -65,48 +65,29 @@ button:focus {
 
 /* Sidebar */
 #sidebar {
-  background-color: #333;
-  /* Adjust color as needed */
-  width: 260px;
-  /* Sidebar width */
-  height: 100%;
-
-  transition: transform 0.3s ease-in-out;
-  position: fixed;
-  top: 0;
-  left: 0;
-  padding-top: 110px;
-  transition: transform 0.3s ease-in-out;
-  /* Adjust padding to account for navbar height */
+  transition: transform 0.3s ease;
 }
 
-/* Essential styles for the sidebar transition */
-
-
-/* Ensure initial state is hidden */
-.translate-x-0 {
-  transform: translateX(0);
-}
-
-.-translate-x-full {
+#sidebar.sidebar-closed {
   transform: translateX(-100%);
 }
 
-
-#sidebar nav {
-  padding: 20px;
+#sidebar.sidebar-open {
+  transform: translateX(0);
 }
 
-#sidebar nav a {
-  color: #fff;
-  text-decoration: none;
-  display: block;
-  padding: 10px 0;
+#backdrop {
+  transition: opacity 0.3s ease;
 }
 
-#sidebar nav a:hover {
-  background-color: #555;
-  /* Hover background color */
+#backdrop.backdrop-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#backdrop.backdrop-visible {
+  opacity: 1;
+  pointer-events: all;
 }
 
 /* Overlay */
